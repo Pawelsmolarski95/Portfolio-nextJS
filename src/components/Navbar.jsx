@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -8,13 +8,14 @@ import { BsPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);
-
+  
   const handleNav = () => {
     setNav(!nav);
   };
 
+
   return (
-    <div className="fixed w-full h-20 bg-white  shadow-xl z-[100] ">
+    <div className=" w-full h-20 bg-white  shadow-xl z-[100] ">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <h3>Paweł Smolarski</h3>
         <div>

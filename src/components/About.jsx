@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      delay: 100
+    });
+  }, []);
+
   return (
     <div className="w-full md:h-screen p-2 flex items-center py-16 ">
       <div className="max-w-[1200px] m-auto md:grid grid-cols-3 gap-8">
@@ -24,10 +33,19 @@ const About = () => {
             I started learning new technologies such as React, Node JS, Mongo DB
             and building new projects by implementing the technologies
           </p>
-          <p className="py-4 cursor-pointer underline">Check out some of my last projects</p>
+          <p className="py-4 cursor-pointer underline">
+            Check out some of my last projects
+          </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <img className="rounded-xl" src="https://images.pexels.com/photos/1297611/pexels-photo-1297611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="laptop"/>
+        <div
+          data-aos="fade-left"
+          className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300"
+        >
+          <img
+            className="rounded-xl"
+            src="https://images.pexels.com/photos/1297611/pexels-photo-1297611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="laptop"
+          />
         </div>
       </div>
     </div>
