@@ -1,20 +1,24 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import Link from "next/link";
 
 const About = () => {
   useEffect(() => {
     AOS.init({
       duration: 500,
-      delay: 100
+      delay: 100,
     });
   }, []);
 
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16  font-mono">
-      <div className="max-w-[1200px] m-auto md:grid grid-cols-3 p-16 bg-[#DECBA4] gap-8">
+    <div id='about'  className="w-full md:h-screen p-2 flex flex-col gap-8 items-center justify-center py-16 bg-gradient-to-r from-[#3E5151]  to-[#DECBA4]  font-mono">
+      <div data-aos="fade-left" className="max-w-[1200px] mt-[10rem] m-auto md:grid grid-cols-3 p-16 bg-[#DECBA4] gap-8">
         <div className="col-span-2">
-          <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold " >About</p>
+          <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold ">
+            About
+          </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600 ">I am not normal developer</p>
           <p className="text-gray-600 ">
@@ -47,6 +51,13 @@ const About = () => {
             alt="laptop"
           />
         </div>
+      </div>
+      <div className="flex justify-center mb-16">
+        <Link href="/#skills">
+          <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
+            <HiOutlineChevronDoubleDown size={40} className="text-[#3d81bc]" />
+          </div>
+        </Link>
       </div>
     </div>
   );

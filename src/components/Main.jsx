@@ -14,26 +14,31 @@ const Main = () => {
   useEffect(() => {
     AOS.init({
       duration: 500,
-      delay: 100
+      delay: 200,
     });
   }, []);
   return (
-    <div className="w-full h-screen text-center bg-gradient-to-r from-[#3E5151]  to-[#DECBA4] font-mono">
-      <div className="m-auto w-full h-full p-2  flex flex-col justify-center items-center">
-        <div className="max-w-[1440] w-full  m-auto p-2 flex flex-row gap-10 justify-center items-center">
-          <div data-aos="fade-right" className="ml-5">
-            <Image src={mainImage} width={400} height={400} />
-          </div>
-          <div className="ml-10 px-10">
-            <h2 className="py-4 text-white">
-              Hello, I'm{" "}
-              <span className="text-[#3d81bc]">Paweł Smolarski</span>
-            </h2>
-            <h2 className="py-2 w-[500px] text-white">
-              I'am a{" "}
-              <span className="text-[#3d81bc]">
-                <Typical
+    <div className=" w-full h-full p-2 bg-gradient-to-r from-[#3E5151] to-[#DECBA4] font-mono flex flex-col justify-center items-center">
+      <div
+        data-aos="fade-left"
+        className=" mt-[110px] py-16 flex h-full lg:flex-row flex-col gap-2 justify-center items-center"
+      >
+        <div data-aos="fade-right" className="md:ml-5">
+          <Image src={mainImage} width={400} height={400} />
+        </div>
+        <div
+          data-aos="flip-down"
+          className="md:ml-10  px-10 md:items-center items-center justify-center"
+        >
+          <h2 className="py-4 text-white">
+            Hello, I'm <span className="text-[#3d81bc]">Paweł Smolarski</span>
+          </h2>
+          <h2 className="py-2 w-[500px text-center  text-white">
+            I'am a <br />
+            <span className="text-[#3d81bc]">
+              <Typical
                 steps={[
+                  2000,
                   "Frontend",
                   1000,
                   "Web",
@@ -46,37 +51,32 @@ const Main = () => {
                 loop={1}
                 wrapper="d"
               />
-              </span>
-              
-              Developer
-            </h2>
+            </span>
+            Developer
+          </h2>
 
-            <div className="flex items-center justify-between mt-16 w-full m-auto max-w-[332px]">
-              <div className="rounded-full  shadow-lg bg-[#3E5151]  text-[#DECBA4] p-5 cursor-pointer ease-in duration-500">
-                <FaLinkedin size={25} />
-              </div>
-              <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
-                <FaGithub size={25} />
-              </div>
-              <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
-                <AiOutlineMail size={25} />
-              </div>
-              <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
-                <BsPersonLinesFill size={25} />
-              </div>
+          <div className="flex items-center justify-between mt-16 w-full m-auto max-w-[332px]">
+            <div className="rounded-full  shadow-lg bg-[#3E5151]  text-[#DECBA4] p-5 cursor-pointer ease-in duration-500">
+              <FaLinkedin size={25} />
+            </div>
+            <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
+              <FaGithub size={25} />
+            </div>
+            <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
+              <AiOutlineMail size={25} />
+            </div>
+            <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
+              <BsPersonLinesFill size={25} />
             </div>
           </div>
         </div>
-        <div className="flex justify-center mb-16">
-          <Link href="/about">
-            <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
-              <HiOutlineChevronDoubleDown
-                size={40}
-                className="text-[#3d81bc]"
-              />
-            </div>
-          </Link>
-        </div>
+      </div>
+      <div className="flex justify-center md:mb-4 mt-5">
+        <Link href="/#about">
+          <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
+            <HiOutlineChevronDoubleDown size={40} className="text-[#3d81bc]" />
+          </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import {HiOutlineChevronDoubleUp} from "react-icons/hi";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+    <div id="contact"  className="w-full lg:h-screen">
+      <div data-aos="fade-up" className="max-w-[1240px] m-auto my-16 bg-[#DECBA4] px-16 pt-8 font-mono w-full">
+        <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold">
           Contact
         </p>
         <h2 className="py-4">Get in touch</h2>
@@ -73,8 +73,8 @@ const Contact = () => {
         </div>
         <div className="flex justify-center pt-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-600 p-4 hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp size={26} className='text-[#5651e5]'/>
+            <div className=" shadow-gray-600 animate-bounce  cursor-pointer p-4 hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp size={36} className="text-[#3d81bc]" />
             </div>
           </Link>
         </div>
