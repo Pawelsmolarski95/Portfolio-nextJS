@@ -4,18 +4,28 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
-
   const [nav, setNav] = useState(false);
-  
+
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      delay: 100,
+    });
+  }, []);
 
   return (
-    <div className=" w-full h-20 bg-white  shadow-xl z-[100] ">
+    <div
+      data-aos="fade-down"
+      className="w-full h-20 bg-[#3E5151] text-white  z-[100] "
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <h3>Paweł Smolarski</h3>
         <div>
@@ -46,13 +56,15 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300'
-              : 'fixed left-[-140%] top-0  p-10 ease-in duration-300'
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300"
+              : "fixed left-[-140%] top-0  p-10 ease-in duration-300"
           }
         >
           <div>

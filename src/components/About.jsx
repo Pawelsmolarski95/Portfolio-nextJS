@@ -11,10 +11,10 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16 ">
-      <div className="max-w-[1200px] m-auto md:grid grid-cols-3 gap-8">
+    <div className="w-full md:h-screen p-2 flex items-center py-16  font-mono">
+      <div className="max-w-[1200px] m-auto md:grid grid-cols-3 p-16 bg-[#DECBA4] gap-8">
         <div className="col-span-2">
-          <p className="py-4 uppercase tracking-widest text-[#5653f1]">About</p>
+          <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold " >About</p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600 ">I am not normal developer</p>
           <p className="text-gray-600 ">
