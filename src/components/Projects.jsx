@@ -13,7 +13,7 @@ const Projects = () => {
     <div id="projects">
       <div
         data-aos="fade-left"
-        className="max-w-[1240px] my-[8rem] bg-[#DECBA4] font-mono mx-auto px-16 py-10"
+        className="max-w-[1240px] md:my-[8rem] my-5 bg-[#DECBA4] font-mono mx-auto px-16 py-10"
       >
         <p className="text-xl tracking-[0.5rem] font-bold uppercase text-[#3d81bc]">
           Projects
@@ -54,7 +54,7 @@ const Projects = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center mb-[10rem]">
+      <div className="flex justify-center md:mb-[10rem] mb-10">
         <Link href="/#contact">
           <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
             <HiOutlineChevronDoubleDown size={40} className="text-[#3d81bc]" />

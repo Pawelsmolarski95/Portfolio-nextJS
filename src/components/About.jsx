@@ -13,8 +13,8 @@ const About = () => {
   }, []);
 
   return (
-    <div id='about'  className="w-full md:h-screen p-2 flex flex-col gap-8 items-center justify-center py-16 bg-gradient-to-r from-[#3E5151]  to-[#DECBA4]  font-mono">
-      <div data-aos="fade-left" className="max-w-[1200px] mt-[10rem] m-auto md:grid grid-cols-3 p-16 bg-[#DECBA4] gap-8">
+    <div id='about'  className="w-full md:h-screen p-2 flex flex-col gap-8 items-center justify-center  py-1 lg:py-16 bg-gradient-to-r from-[#3E5151]  to-[#DECBA4]  font-mono">
+      <div data-aos="fade-left" className="max-w-[1200px] lg:mt-[10rem] m-auto md:grid grid-cols-3  p-4 lg:p-16 bg-[#DECBA4] gap-8">
         <div className="col-span-2">
           <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold ">
             About

@@ -5,7 +5,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 const Contact = () => {
   return (
     <div id="contact"  className="w-full lg:h-screen">
-      <div data-aos="fade-up" className="max-w-[1240px] m-auto my-16 bg-[#DECBA4] px-16 pt-8 font-mono w-full">
+      <div data-aos="fade-up" className="max-w-[1240px] m-auto md:my-16 bg-[#DECBA4] px-16 pt-8 font-mono w-full">
         <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold">
           Contact
         </p>

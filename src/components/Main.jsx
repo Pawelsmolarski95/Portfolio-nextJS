@@ -21,21 +21,23 @@ const Main = () => {
     <div className=" w-full h-full p-2 bg-gradient-to-r from-[#3E5151] to-[#DECBA4] font-mono flex flex-col justify-center items-center">
       <div
         data-aos="fade-left"
-        className=" mt-[110px] py-16 flex h-full lg:flex-row flex-col gap-2 justify-center items-center"
+        className=" mt-[110px] py-1 lg:py-16 flex h-full lg:flex-row flex-col gap-2 justify-center items-center"
       >
-        <div data-aos="fade-right" className="md:ml-5">
+        <div data-aos="fade-right" >
           <Image src={mainImage} width={400} height={400} />
         </div>
         <div
           data-aos="flip-down"
           className="md:ml-10  px-10 md:items-center items-center justify-center"
         >
-          <h2 className="py-4 text-white">
-            Hello, I'm <span className="text-[#3d81bc]">Paweł Smolarski</span>
-          </h2>
-          <h2 className="py-2 w-[500px text-center  text-white">
-            I'am a <br />
-            <span className="text-[#3d81bc]">
+          <div className="flex  flex-col justify-center items-center gap-1 lg:gap-6">
+            <h2 className="py-4 flex  text-white text-center">Hello, I'm</h2>{" "}
+            <h2 className="text-[#3d81bc]"> Paweł Smolarski</h2>
+          </div>
+          <div className='flex flex-col items-center' >
+            <h2 className="py-6 w-[500px] text-center  text-white">I'am </h2>
+            <div className="flex flex-row gap-6">
+              <h2 className="text-[#3d81bc] ">
               <Typical
                 steps={[
                   2000,
@@ -51,9 +53,10 @@ const Main = () => {
                 loop={1}
                 wrapper="d"
               />
-            </span>
-            Developer
-          </h2>
+            </h2>
+            <h2 className="text-white">Developer</h2>
+            </div>
+          </div>
 
           <div className="flex items-center justify-between mt-16 w-full m-auto max-w-[332px]">
             <div className="rounded-full  shadow-lg bg-[#3E5151]  text-[#DECBA4] p-5 cursor-pointer ease-in duration-500">

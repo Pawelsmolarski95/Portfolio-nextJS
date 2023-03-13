@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide scroll-smooth
+     @apply bg-[#DECBA4] tracking-wide scroll-smooth
   }
   html {
     @apply scroll-smooth;
