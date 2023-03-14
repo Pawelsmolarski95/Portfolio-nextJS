@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import Link from "next/link";
+import portret  from "../../public/assets/portret.jpeg";
+import Image from "next/image";
 
 const About = () => {
   useEffect(() => {
@@ -13,29 +15,49 @@ const About = () => {
   }, []);
 
   return (
-    <div id='about'  className="w-full md:h-screen p-2 flex flex-col gap-8 items-center justify-center  py-1 lg:py-16 bg-gradient-to-r from-[#3E5151]  to-[#DECBA4]  font-mono">
-      <div data-aos="fade-left" className="max-w-[1200px] lg:mt-[10rem] m-auto md:grid grid-cols-3  p-4 lg:p-16 bg-[#DECBA4] gap-8">
+    <div
+      id="about"
+      className="w-full md:h-screen lg:p-2  flex flex-col gap-8 items-center justify-center  py-1 lg:py-16 bg-gradient-to-r from-[#3E5151]  to-[#DECBA4]  font-mono"
+    >
+      <div
+        data-aos="fade-left"
+        className="max-w-[1300px] lg:mt-[10rem]  m-auto md:grid grid-cols-3  p-4 lg:p-16 bg-[#DECBA4] gap-8"
+      >
         <div className="col-span-2">
           <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold ">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600 ">I am not normal developer</p>
+
           <p className="text-gray-600 ">
-            I have spent the last 6 years in the fire service working as a
-            profesional firefighter. I have always had a knack for technology
-            and working with computers. In 2021, I began to take a serious
-            interest in web development. I started making my first websites.
-            Further seeking knowledge, I began a nine-month Fullstack Developer
-            course with Kodilla.{" "}
+            I'm Paweł Smolarski, I have spent the last 6 years in the fire
+            service working as a profesional firefighter. I have always had a
+            knack for technology and working with computers. In 2021, I began to
+            take a serious interest in Web Development. I started reading about
+            HTML and CSS and began creating my first websites. Day by day the
+            creation of pages became more and more interesting so I started to
+            learn JavaScritpt.{" "}
           </p>
           <p className="text-gray-600 ">
             Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learing Javascript and was even enthused
-            with making websites iteractive.Day by day programming drew me in
-            more and more all the time pursuing the course I started.Over time,
-            I started learning new technologies such as React, Node JS, Mongo DB
-            and building new projects by implementing the technologies
+            to learn more. I started looking for additional learning materials,
+            book, courses and documentation to learn more and more about this
+            technology. In July in 2021 I started a nine-month course "FullStack
+            Developer" in Kodilla. It has been a very busy time, I have been
+            diligently completing all materials every day and creating my
+            additional projects. I started working with React and application
+            development became more and more exciting. Over time, I became
+            interested in the backend site. I became familiar with NodeJS,
+            Express, NestJS and MongoDB. These technologies allowed me to create
+            fullstack applications which you can see on my{" "}
+            <Link href="/">GitHub</Link>.
+          </p>
+          <p className="text-gray-600 ">
+            I am an ambitious and
+            conscientious person who loves programming and creating applications
+            and websites. I enjoy learning new things and solving technical
+            problems. Also interested in UX/UI Design(looking from a
+            different side gives great advantages in software development)
           </p>
           <p className="py-4 cursor-pointer underline">
             Check out some of my last projects
@@ -43,13 +65,9 @@ const About = () => {
         </div>
         <div
           data-aos="fade-left"
-          className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300"
+          className="w-autoh-auto m-auto p-4 bg-[#3E5151]  flex items-center justify-center  hover:scale-105 ease-in duration-300"
         >
-          <img
-            className="rounded-xl"
-            src="https://images.pexels.com/photos/1297611/pexels-photo-1297611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="laptop"
-          />
+          <Image src={portret} width={300} height={650} />
         </div>
       </div>
       <div className="flex justify-center mb-16">

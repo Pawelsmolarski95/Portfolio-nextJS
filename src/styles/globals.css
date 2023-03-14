@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-     @apply bg-[#DECBA4] tracking-wide scroll-smooth
+     @apply bg-[#DECBA4]  tracking-wide scroll-smooth
   }
   html {
     @apply scroll-smooth;
@@ -28,6 +28,6 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase  bg-[#3d81bc]  text-white
+    @apply  rounded-xl uppercase  bg-[#3d81bc]  text-white
   }
 }

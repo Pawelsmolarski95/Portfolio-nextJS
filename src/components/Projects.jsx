@@ -13,7 +13,7 @@ const Projects = () => {
     <div id="projects">
       <div
         data-aos="fade-left"
-        className="max-w-[1240px] md:my-[8rem] my-5 bg-[#DECBA4] font-mono mx-auto px-16 py-10"
+        className="max-w-[1300px] md:my-[8rem] my-5 bg-[#DECBA4] font-mono mx-auto px-16 py-10"
       >
         <p className="text-xl tracking-[0.5rem] font-bold uppercase text-[#3d81bc]">
           Projects

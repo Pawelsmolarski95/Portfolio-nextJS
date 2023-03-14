@@ -18,12 +18,12 @@ const Main = () => {
     });
   }, []);
   return (
-    <div className=" w-full h-full p-2 bg-gradient-to-r from-[#3E5151] to-[#DECBA4] font-mono flex flex-col justify-center items-center">
+    <div className=" w-full h-full lg:p-2 mb-14 bg-gradient-to-r from-[#3E5151] to-[#DECBA4] font-mono flex flex-col justify-center items-center">
       <div
         data-aos="fade-left"
-        className=" mt-[110px] py-1 lg:py-16 flex h-full lg:flex-row flex-col gap-2 justify-center items-center"
+        className=" mt-[110px] py-1 lg:py-16 flex h-full lg:flex-row flex-col gap-2 justify-center items-center "
       >
-        <div data-aos="fade-right" >
+        <div data-aos="fade-right " >
           <Image src={mainImage} width={400} height={400} />
         </div>
         <div
