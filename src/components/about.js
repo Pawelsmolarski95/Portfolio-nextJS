@@ -17,19 +17,19 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full md:h-screen lg:p-2  flex flex-col gap-8 items-center justify-center  py-1 lg:py-16 bg-gradient-to-r from-[#3E5151]  to-[#DECBA4]  font-mono"
+      className="w-[100%] h-[100vh] max-w-[1240px] m-auto mb-[750px] md:mb-[200px] flex flex-col gap-8 items-center justify-center bg-transparent"
     >
       <div
         data-aos="fade-left"
-        className="max-w-[1300px] lg:mt-[10rem]  m-auto md:grid grid-cols-3  p-4 lg:p-16 bg-[#DECBA4] gap-8"
+        className="max-w-[1240px] lg:mt-[10rem]  m-auto md:grid grid-cols-3  p-4 md:p-16 bg-[#DECBA4] gap-8"
       >
         <div className="col-span-2">
-          <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold ">
+          <p className="uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold ">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
 
-          <p className="text-gray-600 ">
+          <p className="text-gray-600 text-[14px] ">
             I'm Paweł Smolarski, I have spent the last 6 years in the fire
             service working as a profesional firefighter. I have always had a
             knack for technology and working with computers. In 2021, I began to
@@ -38,7 +38,7 @@ const About = () => {
             creation of pages became more and more interesting so I started to
             learn JavaScritpt.{" "}
           </p>
-          <p className="text-gray-600 ">
+          <p className="text-gray-600 text-[14px] ">
             Fascinated with how intricate programming can be I was quickly drawn
             to learn more. I started looking for additional learning materials,
             book, courses and documentation to learn more and more about this
@@ -52,7 +52,7 @@ const About = () => {
             fullstack applications which you can see on my{" "}
             <Link href="/">GitHub</Link>.
           </p>
-          <p className="text-gray-600 ">
+          <p className="text-gray-600 text-[14px]">
             I am an ambitious and
             conscientious person who loves programming and creating applications
             and websites. I enjoy learning new things and solving technical

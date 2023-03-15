@@ -13,7 +13,7 @@ const SkillsItem = ({skillImage, skillName}) => {
   return (
     <div
       data-aos="zoom-in"
-      className="p-6 bg-white shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+      className="p-6 bg-white m-auto  shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
     >
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
         <div className="m-auto hover:animate-bounce">

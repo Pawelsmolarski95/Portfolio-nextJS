@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Main from "@/components/Main";
-import Container from "@/components/Container";
-import { useEffect } from "react";
+import About from "@/components/about";
+import Skills from "@/components/skills";
+import Projects from "@/components/projects";
+import Contact from "@/components/contact";
+import Main from "@/components/main";
 
 export default function Home() {
   return (
@@ -12,8 +14,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
-      <Container />
+      <Main />
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </>
   );
 }

@@ -10,9 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'main-img': "url('/../public/assets/css.png')",
-      }
     },
   },
   plugins: [],

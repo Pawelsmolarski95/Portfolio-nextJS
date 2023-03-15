@@ -22,17 +22,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleFixed = () => {
-      if (window.scrollY >= 90) {
-        setFixed(true);
-      } else {
-        setFixed(false);
-      }
-    };
-    window.addEventListener("scroll", handleFixed);
-  }, []);
-
-  useEffect(() => {
     AOS.init({
       duration: 500,
       delay: 800,
@@ -40,14 +29,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
-      className={
-        fixed
-          ? "fixed w-full h-20 z-[100] bg-transparent"
-          : "w-full h-20 z-[100] bg-gradient-to-r from-[#3E5151] to-[#DECBA4] "
-      }
-    >
-      <div className="flex justify-between font-mono tracking-widest items-center w-full h-full px-2 2xl:px-16 ">
+    <div className="fixed flex w-[100%] h-20  z-[100] bg-transparent">
+      <div className="flex justify-between font-mono tracking-widest items-center w-[100%] h-full px-2 2xl:px-16 ">
         <Link href="/">
           <Image
             src={logo}
@@ -58,7 +41,7 @@ const Navbar = () => {
           />
         </Link>
         <div>
-          <ul s className="hidden md:flex">
+          <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b border-[#3E5151] text-[#3E5151]">
               <Link href="/">Home</Link>
             </li>
@@ -76,7 +59,7 @@ const Navbar = () => {
             </li>
           </ul>
           {/* Hamburger Icon */}
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden mr-[13rem]">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -86,7 +69,9 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         className={
-          nav ? "lg:hidden fixed z-[10] left-0 top-0 w-full h-full bg-black/60" : ""
+          nav
+            ? "lg:hidden fixed z-[10] left-0 top-0 w-full h-full bg-black/60"
+            : ""
         }
       >
         {/* Side Drawer Menu */}
