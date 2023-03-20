@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import adsProjectImage from "../../public/assets/adsProject.png";
-import foodProjectImage from "../../public/assets/foodProject.png";
-import travelProjectImage from "../../public/assets/travelProject.png";
-import waveProjectImage from "../../public/assets/waveProject.png";
+import adsProjectImage from "../../public/images/adsProject.png";
+import foodProjectImage from "../../public/images/foodProject.png";
+import travelProjectImage from "../../public/images/travelProject.png";
+import waveProjectImage from "../../public/images/waveProject.png";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const Projects = () => {
@@ -54,9 +54,14 @@ const Projects = () => {
           />
         </div>
         <div className="mt-5 text-center cursor-pointer text-[#3d81bc]">
-          <Link href="/projects" >
-          <h5>See more on my Github</h5>
-          </Link>
+          <a
+            href="https://github.com/Pawelsmolarski95"
+            target={"_blank"}
+            rel={"noreferrer"}
+            passHref={true}
+          >
+            <h5>See more on my Github</h5>
+          </a>
         </div>
       </div>
       <div className="flex justify-center md:mb-[10rem] ">

@@ -9,7 +9,6 @@ import { skills } from "../data/db.js";
 
 const Skills = () => {
 
-  console.log(skills)
   
   useEffect(() => {
     AOS.init({

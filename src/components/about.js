@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import Link from "next/link";
-import portret  from "../../public/assets/portret.jpeg";
+import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
 
 const About = () => {
@@ -53,15 +53,22 @@ const About = () => {
             <Link href="/">GitHub</Link>.
           </p>
           <p className="text-gray-600 text-[14px]">
-            I am an ambitious and
-            conscientious person who loves programming and creating applications
-            and websites. I enjoy learning new things and solving technical
-            problems. Also interested in UX/UI Design(looking from a
-            different side gives great advantages in software development)
+            I am an ambitious and conscientious person who loves programming and
+            creating applications and websites. I enjoy learning new things and
+            solving technical problems. Also interested in UX/UI Design(looking
+            from a different side gives great advantages in software
+            development)
           </p>
-          <p className="py-4 cursor-pointer underline">
-            Check out some of my last projects
-          </p>
+          <a
+            href="https://github.com/Pawelsmolarski95"
+            target={"_blank"}
+            rel={"noreferrer"}
+            passHref={true}
+          >
+            <p className="py-4 cursor-pointer animate-bounce text-center text-[#3d81bc] ">
+              Check out some of my last projects
+            </p>
+          </a>
         </div>
         <div
           data-aos="fade-left"

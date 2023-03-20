@@ -1,9 +1,9 @@
-import Main from "./main.js";
+import Main from "./Main.js";
 import React from "react";
-import About from "./about.js";
-import Contact from "./contact.js";
-import Projects from "./projects.js";
-import Skills from "./skills.js";
+import About from "./About.js";
+import Contact from "./Contact.js";
+import Projects from "./Projects.js";
+import Skills from "./Skills.js";
 
 const Container = () => {
   return (
