@@ -4,13 +4,12 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div id="contact"  className="w-full lg:h-screen">
-      <div data-aos="fade-up" className="max-w-[1240px] m-auto md:my-16 bg-[#DECBA4] px-16 pt-8 font-mono w-full">
-        <p className="py-4 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold">
+    <div id="contact"  className="w-full  m-auto">
+      <div data-aos="fade-up" className="max-w-[1240px] m-auto  bg-transparent  font-mono w-full">
+        <p className="px-14 uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold">
           Contact
         </p>
-        <h2 className="py-4">Get in touch</h2>
-        <div className=" max-w-[800px] m-auto text-center py-4">
+        <div className=" max-w-[800px] m-auto text-center py-3">
           <form>
             <div className="grid md:grid-cols-2 gap-4 w-full py-2">
               <div className="flex flex-col">
@@ -19,7 +18,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="border-2 flex border-gray-300 rounded-lg p-3"
+                  className="border-2 flex border-gray-300 rounded-lg p-2"
                 />
               </div>
               <div className="flex flex-col">
@@ -28,7 +27,7 @@ const Contact = () => {
                   type="tel"
                   name="name"
                   id="name"
-                  className="border-2 flex border-gray-300 rounded-lg p-3"
+                  className="border-2 flex border-gray-300 rounded-lg p-2"
                 />
               </div>
             </div>
@@ -39,7 +38,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="border-2 flex border-gray-300 rounded-lg p-3"
+                  className="border-2 flex border-gray-300 rounded-lg p-2"
                 />
               </div>
             </div>
@@ -50,7 +49,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="border-2 flex border-gray-300 rounded-lg p-3"
+                  className="border-2 flex border-gray-300 rounded-lg p-2"
                 />
               </div>
             </div>
@@ -62,16 +61,16 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="border-2 flex border-gray-300 rounded-lg p-3"
+                  className="border-2 flex border-gray-300 rounded-lg p-2"
                 />
               </div>
             </div>
-            <button className="w-full text-gray-100 p-4 mt-4 mb-4">
+            <button className="md:w-[30%] text-gray-100 p-4 mt-4 mb-4">
               Send Message
             </button>
           </form>
         </div>
-        <div className="flex justify-center pt-12">
+        <div className="flex justify-end pt-0">
           <Link href="/">
             <div className=" shadow-gray-600 animate-bounce  cursor-pointer p-4 hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp size={36} className="text-[#3d81bc]" />

@@ -25,7 +25,7 @@ const SkillsItem = ({skillImage, skillName}) => {
           />
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h3>{skillName}</h3>
+          <h3 className=" text-[10px] lg:text-sm">{skillName}</h3>
         </div>
       </div>
     </div>

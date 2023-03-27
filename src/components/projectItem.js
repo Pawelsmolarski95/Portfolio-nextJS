@@ -27,9 +27,9 @@ const ProjectItem = ({ title, image, urlLink, alt, techStack }) => {
           {title}
         </h3>
 
-        <p className="pb-4 pt-2 text-xs text-white text-center ">{techStack}</p>
+        <p className="hidden lg:block pb-4 pt-2 text-xs text-white text-center ">{techStack}</p>
         <Link href={urlLink}>
-          <p className="text-center py-3 px-3 rounded-lg max-w-[25rem] absolute left-[50%] translate-x-[-50%] bg-white text-gray-700 font-bold text-base cursor-pointer  ">
+          <p className="text-center py-3 px-3 rounded-lg w-[10rem] lg:max-w-[25rem] absolute left-[50%] translate-x-[-50%] bg-white text-gray-700 font-bold text-base cursor-pointer  ">
             More info
           </p>
         </Link>

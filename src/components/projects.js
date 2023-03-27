@@ -10,15 +10,14 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-[100%] h-[100vh] md:mb-[400px] mb-[200px]">
+    <div id="projects" className="w-[100%] h-full ">
       <div
         data-aos="fade-left"
-        className="max-w-[1240px]  md:my-[8rem]   bg-[#DECBA4] mx-auto px-16 py-10"
+        className="max-w-[1240px]    m-auto bg-transparent p-12"
       >
-        <p className="text-xl tracking-[0.5rem] font-bold uppercase text-[#3d81bc]">
+        <p className="uppercase tracking-[0.5rem] my-4 text-[#3d81bc] text-xl font-bold ">
           Projects
         </p>
-        <h2 className="py-4">What I've build </h2>
         <div className="grid md:grid-cols-2 gap-2">
           <ProjectItem
             title={"YourAds"}
@@ -63,13 +62,6 @@ const Projects = () => {
             <h5>See more on my Github</h5>
           </a>
         </div>
-      </div>
-      <div className="flex justify-center md:mb-[10rem] ">
-        <Link href="/#contact">
-          <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
-            <HiOutlineChevronDoubleDown size={40} className="text-[#3d81bc]" />
-          </div>
-        </Link>
       </div>
     </div>
   );

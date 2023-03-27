@@ -42,5 +42,9 @@ export const skills = [
   {
     name: "Tailwind",
     url: "/../public/assets/tailwind.png",
+  },
+  {
+    name: "MySQL",
+    url: "/../public/assets/mysql.png",
   }
 ];

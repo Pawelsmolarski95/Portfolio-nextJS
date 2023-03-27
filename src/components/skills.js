@@ -8,8 +8,6 @@ import SkillsItem from "./SkillsItem";
 import { skills } from "../data/db.js";
 
 const Skills = () => {
-
-  
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -19,31 +17,23 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-[100%] h-[100vh] lg:p-2 mb-[400px] md:mb-[100px] flex flex-col items-center justify-center"
+      className="w-[100%] h-full   flex flex-col items-center justify-center"
     >
       <div
         data-aos="fade-left"
-        className="max-w-[1240px]  bg-[#DECBA4] m-auto flex flex-col justify-center p-12"
+        className="max-w-[1240px]  bg-transparent m-auto flex flex-col justify-center p-12"
       >
-        <p className="uppercase tracking-[0.5rem] text-[#3d81bc] text-xl font-bold ">
+        <p className="uppercase tracking-[0.5rem] my-4 text-[#3d81bc] text-xl font-bold ">
           Skills
         </p>
-        <h2 className="py-4">What I Can Do</h2>
+
         <div className="grid sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-          { skills.map((skill) => (
+          {skills.map((skill) => (
             <SkillsItem skillName={skill.name} skillImage={skill.url} />
           ))}
-          
         </div>
       </div>
-      <div className="flex justify-center mb-16">
-        <Link href="/#projects">
-          <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
-            <HiOutlineChevronDoubleDown size={40} className="text-[#3d81bc]" />
-          </div>
-        </Link>
-      </div>
+      
     </div>
   );
 };

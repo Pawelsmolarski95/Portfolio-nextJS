@@ -18,29 +18,41 @@ const Main = () => {
       delay: 200,
     });
   }, []);
+
+    const handleScroll = () => {
+      const element = document.getElementById("#about");
+      if (element) {
+        // 👇 Will scroll smoothly to the top of the next section
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+  
   return (
-    <div className="w-full h-full lg:p-2 md:mb-14 mb-[390px]  bg-transparent font-mono flex flex-col justify-center items-center">
+    <div
+ 
+      className="w-full h-full lg:p-2   bg-transparent font-mono flex flex-col justify-center items-center"
+    >
       <div
         data-aos="fade-left"
-        className=" mt-[110px] py-1 lg:py-16 flex h-full lg:flex-row flex-col gap-2 justify-center items-center "
+        className=" md:mt-[200px] lg:mt-[110px] py-1 lg:py-16 flex h-full lg:flex-row flex-col gap:2 lg:gap-12 justify-center items-center "
       >
         <div data-aos="fade-right ">
           <Image src={mainImage} width={400} height={400} />
         </div>
         <div
           data-aos="flip-down"
-          className="md:ml-10  px-10 md:items-center items-center justify-center"
+          className="md:ml-10  px-10 md:items-center uppercase items-center justify-center"
         >
           <div className="flex  flex-col justify-center items-center gap-1 lg:gap-6">
-            <h2 className="py-4 flex  text-white text-center">Hello, I'm</h2>{" "}
-            <h2 className="text-[#3d81bc]"> Paweł Smolarski</h2>
+            <h2 className="py-4 flex  text-white text-center">
+              Hello, I'm <span className="text-[#3d81bc] ml-4"> Paweł</span>{" "}
+            </h2>{" "}
           </div>
-          <div className="flex flex-col items-center">
-            <h2 className="py-6 w-[500px] text-center  text-white">I'am </h2>
+          <div className="flex flex-col items-center w-[300px]">
             <div className="flex flex-row gap-6">
               <h2 className="text-[#3d81bc] ">
                 <ReactTyped
-                  strings={["Frontend", "Web", "JavaScript", "React"]}
+                  strings={["JavaScript", "Frontend", "Web", "React"]}
                   typeSpeed={100}
                   backSpeed={150}
                   delay={200}
@@ -55,7 +67,7 @@ const Main = () => {
               href="https://www.linkedin.com/in/pawelsmolarski/"
               target={"_blank"}
               rel={"noreferrer"}
-              passHref={true}
+              passhref="true"
             >
               <div className="rounded-full  shadow-lg bg-[#3E5151]  text-[#DECBA4] p-5 cursor-pointer ease-in duration-500">
                 <FaLinkedin size={25} />
@@ -65,7 +77,7 @@ const Main = () => {
               href="https://github.com/Pawelsmolarski95"
               target={"_blank"}
               rel={"noreferrer"}
-              passHref={true}
+              passhref="true"
             >
               <div className="rounded-full  shadow-lg bg-[#3E5151] text-[#DECBA4]  p-5 cursor-pointer ease-in duration-500">
                 <FaGithub size={25} />
@@ -79,13 +91,6 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center md:mb-4 mt-5">
-        <Link href="/#about">
-          <div className=" p-4 hover:scale-110 ease-in duration-300 animate-bounce">
-            <HiOutlineChevronDoubleDown size={40} className="text-[#3d81bc]" />
-          </div>
-        </Link>
       </div>
     </div>
   );

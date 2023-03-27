@@ -56,11 +56,21 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex justify-center mt-8 items-center flex-col text-[#DECBA4] uppercase tracking-widest gap-4">
-              <Link href="/">Home</Link>
-              <Link href="/#about">About</Link>
-              <Link href="/#skills">Skills</Link>
-              <Link href="/#projects">Projects</Link>
-              <Link href="/#contact">Contact</Link>
+              <Link href="/" scroll={false}>
+                Home
+              </Link>
+              <Link href="/#about" scroll={false}>
+                About
+              </Link>
+              <Link href="/#skills" scroll={false}>
+                Skills
+              </Link>
+              <Link href="/#projects" scroll={false}>
+                Projects
+              </Link>
+              <Link href="/#contact" scroll={false}>
+                Contact
+              </Link>
             </div>
             <div className="mt-10 flex items-center justify-center">
               <div className="flex items-center text-[#DECBA4] justify-center gap-8 my-4 w-full sm:w-[80%]">
@@ -68,7 +78,7 @@ const Navbar = () => {
                   href="https://www.linkedin.com/in/pawelsmolarski/"
                   target={"_blank"}
                   rel={"noreferrer"}
-                  passHref={true}
+                  passhref="true"
                 >
                   <div className="rounded-full bg-[#DECBA4] text-[#3E5151] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
@@ -78,7 +88,7 @@ const Navbar = () => {
                   href="https://github.com/Pawelsmolarski95"
                   target={"_blank"}
                   rel={"noreferrer"}
-                  passHref={true}
+                  passhref="true"
                 >
                   <div className="rounded-full bg-[#DECBA4] text-[#3E5151] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithubAlt />
