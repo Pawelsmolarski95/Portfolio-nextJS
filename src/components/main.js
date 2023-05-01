@@ -4,9 +4,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import Link from "next/link";
-import mainImage from "../../public/images/face.jpeg";
+import mainImage from "../../public/images/face1.jpeg";
 import Image from "next/image";
-import { Typewriter } from "react-typewriting-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactTyped from "react-typed";
@@ -22,7 +21,7 @@ const Main = () => {
     const handleScroll = () => {
       const element = document.getElementById("#about");
       if (element) {
-        // 👇 Will scroll smoothly to the top of the next section
+  
         element.scrollIntoView({ behavior: "smooth" });
       }
     };
@@ -37,6 +36,7 @@ const Main = () => {
         className=" md:mt-[200px] lg:mt-[110px] py-1 lg:py-16 flex h-full lg:flex-row flex-col gap:2 lg:gap-12 justify-center items-center "
       >
         <div data-aos="fade-right ">
+          
           <Image src={mainImage} width={400} height={400} />
         </div>
         <div

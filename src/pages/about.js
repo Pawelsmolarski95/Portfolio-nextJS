@@ -20,7 +20,7 @@ const About = () => {
       className="w-[100%] h-full max-w-[1240px] lg:m-auto  flex flex-col gap-8 items-center justify-center "
     >
       <div
-        data-aos="fade-left"
+        
         className="max-w-[1240px] lg:mt-[10rem]  m-auto lg:grid grid-cols-3  p-4 md:p-16 bg-transparent gap-8"
       >
         <div className="col-span-2 ">

@@ -29,10 +29,10 @@ const Navbar = () => {
       <div className="grow">
         <div className="hidden md:flex items-center uppercase tracking-widest justify-center md:justify-end text-[#3E5151] gap-2 md:gap-8">
           <Link href="/">Home</Link>
-          <Link href="/#about">About</Link>
-          <Link href="/#skills">Skills</Link>
-          <Link href="/#projects">Projects</Link>
-          <Link href="/#contact">Contact</Link>
+          <Link href="/about">About</Link>
+          <Link href="/skills">Skills</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact</Link>
         </div>
       </div>
       <div className="grow  flex items-center justify-end md:hidden">
@@ -59,16 +59,16 @@ const Navbar = () => {
               <Link href="/" scroll={false}>
                 Home
               </Link>
-              <Link href="/#about" scroll={false}>
+              <Link href="/about" scroll={false}>
                 About
               </Link>
-              <Link href="/#skills" scroll={false}>
+              <Link href="/skills" scroll={false}>
                 Skills
               </Link>
-              <Link href="/#projects" scroll={false}>
+              <Link href="/projects" scroll={false}>
                 Projects
               </Link>
-              <Link href="/#contact" scroll={false}>
+              <Link href="/contact" scroll={false}>
                 Contact
               </Link>
             </div>
