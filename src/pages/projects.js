@@ -7,7 +7,7 @@ import foodProjectImage from "../../public/images/foodProject.png";
 import travelProjectImage from "../../public/images/travelProject.png";
 import waveProjectImage from "../../public/images/waveProject.png";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
-import ProjectItem from "../components/ProjectItem"
+import ProjectItem from "../components/ProjectItem.js"
 
 const Projects = () => {
   return (
