@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar.js";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar.js";
 import "@/styles/globals.css";
 import 'react-typewriting-effect/dist/index.css'
 

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ProjectItem from "../components/ProjectItem";
+
 import adsProjectImage from "../../public/images/adsProject.png";
 import foodProjectImage from "../../public/images/foodProject.png";
 import travelProjectImage from "../../public/images/travelProject.png";
 import waveProjectImage from "../../public/images/waveProject.png";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import ProjectItem from "../components/ProjectItem"
 
 const Projects = () => {
   return (

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import Link from "next/link";
 import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
@@ -19,15 +18,11 @@ const About = () => {
       id="about"
       className="w-[100%] h-full max-w-[1240px] lg:m-auto  flex flex-col gap-8 items-center justify-center "
     >
-      <div
-        
-        className="max-w-[1240px] lg:mt-[10rem]  m-auto lg:grid grid-cols-3  p-4 md:p-16 bg-transparent gap-8"
-      >
+      <div className="max-w-[1240px] lg:mt-[10rem]  m-auto lg:grid grid-cols-3  p-4 md:p-16 bg-transparent gap-8">
         <div className="col-span-2 ">
           <p className="uppercase tracking-[0.5rem] my-4 text-[#3d81bc] text-xl font-bold ">
             About
           </p>
-
 
           <p className="text-white text-[14px] ">
             I'm Paweł Smolarski, I have spent the last 6 years in the fire
@@ -77,7 +72,6 @@ const About = () => {
           <Image src={portret} width={300} height={650} />
         </div>
       </div>
-      
     </div>
   );
 };

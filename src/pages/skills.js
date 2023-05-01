@@ -2,10 +2,10 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
-import SkillsItem from "../components/SkillsItem";
+
+
 import { skills } from "../data/db.js";
+import SkillsItem from "../components/SkillsItem.js";
 
 const Skills = () => {
   useEffect(() => {
