@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+
+
+
+
 @layer base {
   body {
 
-     @apply bg-gradient-to-r from-[#3E5151] to-[#DECBA4] tracking-wide scroll-smooth m-0 p-0 box-border font-mono  overflow-x-hidden  
+     @apply bg-gray-100 tracking-wide w-full h-full scroll-smooth m-0 p-0 box-border font-mono  overflow-x-hidden  
+     /* @apply bg-gradient-to-r from-[#3E5151] to-[#DECBA4] tracking-wide scroll-smooth m-0 p-0 box-border font-mono  overflow-x-hidden   */
   }
   html {
     @apply scroll-smooth;

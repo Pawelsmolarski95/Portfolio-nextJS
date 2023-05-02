@@ -4,18 +4,38 @@ import Image from "next/image";
 import Link from "next/link";
 import { Popover } from "@headlessui/react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaLinkedinIn,
-  FaGithubAlt,
-} from "react-icons/fa";
-import { BsFillPersonLinesFill, BsPersonLinesFill } from "react-icons/bs";
-import logo from "../../public/images/PS.png";
+import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
+import logo from "../../public/images/logo_main.svg";
+import nameNavbar from "../../public/images/name_navbar.svg";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SwitchToggle from "./SwitchToggle";
 
 const Navbar = () => {
+  const [isDarkmode, setIsDarkmode] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const toggleTheme = () => {
+    setIsDarkmode(!isDarkmode);
+    localStorage.setItem("isDarkmode", !isDarkmode);
+  };
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("isDarkmode");
+    if (storedTheme) {
+      setIsDarkmode(JSON.parse(storedTheme));
+    }
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -24,17 +44,59 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Popover className={"container mx-aut flex items-center  px-6 py-2 h-24"}>
-      <Image src={logo} alt="Logo" width={100} height={100} />
+    <Popover className={"container mx-auto flex items-center  px-6 py-2 h-24"}>
+      <div className="relative">
+        <Image
+          src={logo}
+          alt="Logo"
+          width={80}
+          height={80}
+          className="mt-3 ml-5 cursor-pointer"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+        {isHovered && (
+          <div className="hover-text absolute top-[50%] translate-y-[-50%] left-[100px] z-10 ease-in duration-500">
+           
+          </div>
+        )}
+      </div>
+
       <div className="grow">
-        <div className="hidden md:flex items-center uppercase tracking-widest justify-center md:justify-end text-[#3E5151] gap-2 md:gap-8">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/skills">Skills</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
+        <div className="hidden md:flex items-center uppercase tracking-widest justify-center md:justify-center text-[#3E5151] gap-2 md:gap-8 ">
+          <Link
+            className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300"
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300 "
+            href="/skills"
+          >
+            Skills
+          </Link>
+          <Link
+            className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300"
+            href="/projects"
+          >
+            Projects
+          </Link>
+          <Link
+            className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300 "
+            href="/contact"
+          >
+            Contact
+          </Link>
         </div>
       </div>
+      <SwitchToggle isDarkmode={isDarkmode} toggleTheme={toggleTheme} />
       <div className="grow  flex items-center justify-end md:hidden">
         <Popover.Button className="inline-flex items-center justify-end gap-2 p-2 text-[#DECBA4] bg-[#3E5151] md:gap-8">
           <AiOutlineMenu size={25} aria-hidden="true" />
