@@ -1,50 +1,46 @@
 export const skills = [
   {
-    name: "HTML",
-    url: "/../public/assets/html.png",
-  },
-  {
     name: "CSS",
-    url: "/../public/assets/css.png",
+    url: "/../public/images/css.png",
   },
   {
     name: "JavaScript",
-    url: "/../public/assets/js.png",
+    url: "/../public/images/js.png",
   },
   {
     name: "Bootstrap",
-    url: "/../public/assets/bootstrap.png",
+    url: "/../public/images/bootstrap.png",
   },
   {
     name: "React",
-    url: "/../public/assets/react.png",
+    url: "/../public/images/react.png",
   },
   {
     name: "React Redux",
-    url: "/../public/assets/redux.png",
+    url: "/../public/images/redux.png",
   },
   {
     name: "Mongo DB",
-    url: "/../public/assets/mongo.png",
+    url: "/../public/images/mongo.png",
   },
   {
     name: "NodeJS",
-    url: "/../public/assets/node.png",
+    url: "/../public/images/node.png",
   },
   {
     name: "Github",
-    url: "/../public/assets/git.png",
+    url: "/../public/images/git.png",
   },
   {
     name: "TypeScript",
-    url: "/../public/assets/typescript.png",
+    url: "/../public/images/typescript.png",
   },
   {
     name: "Tailwind",
-    url: "/../public/assets/tailwind.png",
+    url: "/../public/images/tailwind.png",
   },
   {
     name: "MySQL",
-    url: "/../public/assets/mysql.png",
-  }
+    url: "/../public/images/mysql.png",
+  },
 ];

@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
+import SkillsItem from "@/components/SkillsItem";
 
 const About = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-full   max-w-[1200px] px-10 m-auto flex "
+      className="w-full h-full flex flex-col  max-w-[1200px] px-10 m-auto flex "
     >
       <div className="m-auto flex flex-col justify-center items-center md:flex-row gap-8">
         <div className="w-[100%] md:w-[50%] mt-10 sm:mt-0 ">
@@ -41,17 +42,16 @@ const About = () => {
             developing applications and websites. I believe that the most
             important thing in software development is passion, it is thanks to
             it that projects are unique and have a much higher value.
-           </p><br/>
-          
+          </p>
+          <br />
         </div>
-        <div className="w-[330px] h-auto p-4 bg-[#3E5151] rounded-xl mb-10 flex items-center justify-center  hover:scale-105 ease-in duration-300">
-          <Image
-            src={portret}
-            width={300}
-            height={650}
-            className="rounded-xl"
-          />
+        <div className="w-[280px] h-[400px] p-4 bg-[#3E5151] rounded-xl mb-10 flex items-center justify-center  hover:scale-105 ease-in duration-300">
+          <Image src={portret} className="rounded-xl h-full" />
         </div>
+      </div>
+      <div>
+        <h3>Technology I use:</h3>
+        <SkillsItem />
       </div>
     </div>
   );
