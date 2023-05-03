@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
 
       <div className="grow">
-        <div className="hidden md:flex items-center uppercase tracking-widest justify-center md:justify-center text-[#3E5151] gap-2 md:gap-8 ">
+        <div className="hidden lg:flex items-center uppercase tracking-widest justify-center md:justify-center text-[#3E5151] gap-2 md:gap-8 ">
           <Link
             className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300"
             href="/"
@@ -97,14 +97,14 @@ const Navbar = () => {
         </div>
       </div>
       <SwitchToggle isDarkmode={isDarkmode} toggleTheme={toggleTheme} />
-      <div className="grow  flex items-center justify-end md:hidden">
+      <div className="grow  flex items-center justify-end lg:hidden">
         <Popover.Button className="inline-flex items-center justify-end gap-2 p-2 text-[#DECBA4] bg-[#3E5151] md:gap-8">
           <AiOutlineMenu size={25} aria-hidden="true" />
         </Popover.Button>
       </div>
       <Popover.Panel
         focus
-        className="absolute z-[100] inset-x-0 top-0 origin-top-right transform p-2 bg-[#3E5151] transition md:hidden"
+        className="absolute z-[100] inset-x-0 top-0 origin-top-right transform p-2 bg-[#3E5151] transition lg:hidden"
       >
         <div className="rounded-lg shadow-lg   ring-opacity-5 divide-y-2 divide-gray-50">
           <div className="pt-5 pb-6 px-5">

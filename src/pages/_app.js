@@ -5,7 +5,7 @@ import 'react-typewriting-effect/dist/index.css'
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex h-screen flex-col justify-between">
       <Navbar />
       <Component {...pageProps} />
       <Footer/>
