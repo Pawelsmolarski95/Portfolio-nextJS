@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
-import SkillsItem from "@/components/SkillsItem";
+import { EmblaCarousel } from "../components/EmblaCarousel";
 
 const About = () => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-full flex flex-col  max-w-[1200px] px-10 m-auto flex "
+      className="w-full h-full  flex-col  max-w-[1200px] px-10 m-auto flex "
     >
       <div className="m-auto flex flex-col justify-center items-center md:flex-row gap-8">
         <div className="w-[100%] md:w-[50%] mt-10 sm:mt-0 ">
@@ -49,9 +49,11 @@ const About = () => {
           <Image src={portret} className="rounded-xl h-full" />
         </div>
       </div>
-      <div>
-        <h3>Technology I use:</h3>
-        <SkillsItem />
+      <div className="mb-10 sm:px-10 lg:px-[120px] flex flex-col gap-8 justify-center">
+        <h3 className="">Technology I use:</h3>
+        <div>
+          <EmblaCarousel />
+        </div>
       </div>
     </div>
   );

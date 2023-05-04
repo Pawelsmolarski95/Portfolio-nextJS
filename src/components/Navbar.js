@@ -76,12 +76,7 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
-            className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300 "
-            href="/skills"
-          >
-            Skills
-          </Link>
+        
           <Link
             className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300"
             href="/projects"
