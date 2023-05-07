@@ -9,7 +9,7 @@ import { FiExternalLink } from "react-icons/fi";
 const ProjectItem = ({ title, image, urlLink, alt, techStack }) => {
   return (
     <div className="relative h-[600px] w-full md:w-[700px] lg:w-[1100px]  m-auto  rounded-xl cursor-pointer group ">
-      <Image src={image} className="w-full  h-full" alt={alt} />
+      <Image src={image} className="w-full  h-full" alt={alt} loading = "eager" />
       <div className="absolute group text-white  z-10 left-0 bottom-0  pl-10 w-full bg-gray-800 bg-opacity-90">
         <h3 className="text-[20px] uppercase my-1 font-thin">APRIL 2021</h3>
         <h2 className="text-[24px]  my-2">New Wave Festiwal</h2>
