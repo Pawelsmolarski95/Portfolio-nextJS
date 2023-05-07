@@ -5,7 +5,7 @@ export const skills = [
   },
   {
     name: "JavaScript",
-    url: "/../public/images/js.png",
+    url: "../.././public/images/js.png",
   },
   {
     name: "Bootstrap",

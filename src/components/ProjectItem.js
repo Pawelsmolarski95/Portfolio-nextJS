@@ -3,36 +3,56 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 const ProjectItem = ({ title, image, urlLink, alt, techStack }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      delay: 200,
-    });
-  }, []);
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      className="relative flex items-center justify-center h-auto w-full shadow-xl rounded-xl p-4 group bg-[#3E5151] hover:bg-[#3d81bc] "
-    >
-      <Image
-        src={image}
-        className="rounded-xl group-hover:opacity-10"
-        alt={alt}
-      />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-        <h3 className="text-2xl text-white tracking-widest text-center">
-          {title}
-        </h3>
+    <div className="relative h-[600px] w-full md:w-[700px] lg:w-[1100px]  m-auto  rounded-xl cursor-pointer group ">
+      <Image src={image} className="w-full  h-full" alt={alt} />
+      <div className="absolute group text-white  z-10 left-0 bottom-0  pl-10 w-full bg-gray-800 bg-opacity-90">
+        <h3 className="text-[20px] uppercase my-1 font-thin">APRIL 2021</h3>
+        <h2 className="text-[24px]  my-2">New Wave Festiwal</h2>
+        <div className=" h-0  group-hover:h-[100px] transition-height duration-500 ease-in-out   ">
+          <div>
+            <div className="mb-4 opacity-0 group-hover:opacity-100 ease-in transition duration-500 ">
+              <p>
+                A site where you can book a ticket for a concert of your choice,
+                along with support for a purchase form. We communicate with the
+                server using WebSocket, where we know in real time which seat is
+                free.
+              </p>
+            </div>
+            <div className="flex opacity-0 group-hover:opacity-100 ease-in transition duration-200 gap-10 mb-4 justify-start">
+              <p>React</p>
+              <p>Redux</p>
+              <p>Thunk</p>
+              <p>Sass</p>
+              <p>MongoDB</p>
+              <p>Node</p>
+              <p>Express</p>
+            </div>{" "}
+          </div>
+        </div>
 
-        <p className="hidden lg:block pb-4 pt-2 text-xs text-white text-center ">{techStack}</p>
-        <Link href={urlLink}>
-          <p className="text-center py-3 px-3 rounded-lg w-[10rem] lg:max-w-[25rem] absolute left-[50%] translate-x-[-50%] bg-white text-gray-700 font-bold text-base cursor-pointer  ">
-            More info
-          </p>
-        </Link>
+        <div className="flex mb-6 gap-6 ">
+          <a
+            href="https://github.com/Pawelsmolarski95"
+            target={"_blank"}
+            rel={"noreferrer"}
+            passhref="true"
+          >
+            <FaGithub size={25} />
+          </a>
+          <a
+            href="https://github.com/Pawelsmolarski95"
+            target={"_blank"}
+            rel={"noreferrer"}
+            passhref="true"
+          >
+            <FiExternalLink size={25} />
+          </a>
+        </div>
       </div>
     </div>
   );

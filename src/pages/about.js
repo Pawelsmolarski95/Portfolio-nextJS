@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
-import { EmblaCarousel } from "../components/EmblaCarousel";
+import {  SkillsCarousel } from "../components/SkillsCarousel";
 
 const About = () => {
   useEffect(() => {
@@ -52,7 +52,7 @@ const About = () => {
       <div className="mb-10 sm:px-10 lg:px-[120px] flex flex-col gap-8 justify-center">
         <h3 className="">Technology I use:</h3>
         <div>
-          <EmblaCarousel />
+          <SkillsCarousel />
         </div>
       </div>
     </div>
