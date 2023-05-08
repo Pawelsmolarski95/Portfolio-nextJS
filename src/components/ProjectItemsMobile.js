@@ -12,6 +12,8 @@ const ProjectItemsMobile = () => {
           name={project.name}
           data={project.data}
           description={project.description}
+          tech={project.tech}
+          git={project.git}
         />
       ))}
     </>

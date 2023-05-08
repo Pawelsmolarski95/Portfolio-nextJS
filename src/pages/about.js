@@ -1,19 +1,9 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Link from "next/link";
 import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
-import {  SkillsCarousel } from "../components/SkillsCarousel";
+import { SkillsCarousel } from "../components/SkillsCarousel";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      delay: 1000,
-    });
-  }, []);
-
   return (
     <div
       id="about"

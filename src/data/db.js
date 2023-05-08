@@ -100,8 +100,8 @@ export const Projects = [
       "Travel blog is an application in which you can add thistles about your recent travels. The site also provides the ability to edit and delete content.",
     src: travelProject,
     alt: "main page project",
-    url: "https://github.com/Pawelsmolarski95/TravelBook",
-    git: "https://github.com/Pawelsmolarski95/REST_API",
+    url: "https://yourtravelblog.netlify.app/",
+    git: "https://github.com/Pawelsmolarski95/TravelBook",
     tech: ["React", "Redux", "Router", "Sass"],
   },
 

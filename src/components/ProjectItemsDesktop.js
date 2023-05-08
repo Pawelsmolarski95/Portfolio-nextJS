@@ -14,6 +14,7 @@ const ProjectItemsDesktop = () => {
               data={project.data}
               description={project.description}
               tech={project.tech}
+              git={project.git}
             />
           ))}
         </div>

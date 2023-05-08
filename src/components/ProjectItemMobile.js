@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-const ProjectItemMobile = ({ name, src, url, alt, git, data }) => {
+const ProjectItemMobile = ({ name, src, url, alt, git, data,description, tech  }) => {
   return (
     <div className="h-full w-full ">
       <div className="w-full h-full">
@@ -17,20 +17,15 @@ const ProjectItemMobile = ({ name, src, url, alt, git, data }) => {
             <h3 className="text-[20px] uppercase my-1 font-thin">{data}</h3>
             <h2 className="text-[24px]  my-2">{name}</h2>
             <p>
-              A site where you can book a ticket for a concert of your choice,
-              along with support for a purchase form. We communicate with the
-              server using WebSocket, where we know in real time which seat is
-              free.
+             {description}
             </p>
             <div className="flex gap-4 justify-center flex-wrap ">
-              <p>React</p>
-              <p>Redux</p>
-              <p>Thunk</p>
-              <p>Sass</p>
-              <p>MongoDB</p>
-              <p>Node</p>
-              <p>Express</p>
+              
+              {tech.map((value) => (
+                <p>{value}</p>
+              ))}
             </div>{" "}
+            
             <div className="flex mb-6 gap-6 ">
               <a
                 href={git}
