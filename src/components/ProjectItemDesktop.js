@@ -17,7 +17,7 @@ const ProjectItemDesktop = ({
     <div className=" h-[600px] shrink-0 relative m-auto  rounded-xl cursor-pointer group ">
       <Image src={src} className="w-full  h-full " alt={alt} loading="eager" />
       <div className="absolute group text-white  z-10 left-0 bottom-0  pl-10 w-full bg-gray-800 bg-opacity-90">
-        <h3 className="text-[20px] uppercase my-2 font-thin">{data}</h3>
+        <h3 className="text-[18px] uppercase my-2 tracking-wider font-thin">{data}</h3>
         <h2 className="text-[24px]  my-2">{name}</h2>
         <div className=" h-0  group-hover:h-[100px] transition-height duration-500 ease-in-out   ">
           <div>
