@@ -7,15 +7,15 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-[1100px] w-full h-full  text-gray-600 flex flex-col justify-center  items-center gap-16  m-auto"
+      className="max-w-[1100px] w-full h-full  text-gray-600 flex flex-col justify-center  mb-10 items-center gap-6 sm:gap-16  m-auto"
     > 
-    <div className="flex justify-center items-center gap-3">
-      <h2 className="py-4 sm:text-[34px] font-medium text-[24px] flex tracking-wider text-center">
-        Looking for  
+    <div className="flex mt-6 flex-col sm:flex-row justify-center items-center gap-1 sm:gap-3">
+      <h2 className="py-1 sm:py-4 sm:text-[34px] font-medium text-[28px] flex tracking-wider text-center">
+        Looking for a 
         </h2>
-        <h2 className="py-4 font-medium sm:text-[34px] text-[#3d81bc] text-[24px] flex tracking-wider text-center italic " >
+        <h2 className="py-4 font-medium sm:text-[34px] text-[#3d81bc] text-[28px] flex tracking-wider text-center italic " >
           <ReactTyped
-            strings={[" a Web Developer?"," a React Developer?", "a teammate to project?"]}
+            strings={["Web Developer?","React Developer?", "teammate to project?"]}
             typeSpeed={100}
             backSpeed={100}
             delay={100}
@@ -26,9 +26,9 @@ const Contact = () => {
     </div>
       
 
-      <div className="flex row gap-10 w-full px-6">
-        <div className="w-[50%] flex flex-col justify-center items-center gap-10">
-          <h2 className="font-extralight text-[28px] tracking-wider">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-10 w-full px-6">
+        <div className="w-[90%] sm:w-[50%] flex flex-col justify-center items-center gap-10">
+          <h2 className="font-extralight text-[20px] sm:text-[28px] tracking-wider">
             Find me via social media{" "}
           </h2>
           <div className="flex gap-8">
@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-[50%] flex flex-col gap-8">
+        <div className="w-[90%] sm:w-[50%] flex flex-col gap-8">
           <div className="">
             <label
               htmlFor="name"
@@ -77,7 +77,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   autoComplete="email"
-                  className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   placeholder="janesmith@gmail.com"
                 />
               </div>
