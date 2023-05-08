@@ -46,19 +46,20 @@ const Navbar = () => {
   return (
     <Popover className={"container mx-auto flex items-center  px-6 py-2 h-24"}>
       <div className="relative">
-        <Image
-          src={logo}
-          alt="Logo"
-          width={80}
-          height={80}
-          className="mt-3 ml-5 cursor-pointer"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
+        <a href="/">
+          <Image
+            src={logo}
+            alt="Logo"
+            width={80}
+            height={80}
+            className="mt-3 ml-5 cursor-pointer"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+        </a>
+
         {isHovered && (
-          <div className="hover-text absolute top-[50%] translate-y-[-50%] left-[100px] z-10 ease-in duration-500">
-           
-          </div>
+          <div className="hover-text absolute top-[50%] translate-y-[-50%] left-[100px] z-10 ease-in duration-500"></div>
         )}
       </div>
 
@@ -76,7 +77,7 @@ const Navbar = () => {
           >
             About
           </Link>
-        
+
           <Link
             className="hover:border-[#33adf1] hover:border-b-2 border-b-2 border-transparent ease-in duration-300"
             href="/projects"
@@ -113,21 +114,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex justify-center mt-8 items-center flex-col text-[#DECBA4] uppercase tracking-widest gap-4">
-              <Link href="/" scroll={false}>
-                Home
-              </Link>
-              <Link href="/about" scroll={false}>
-                About
-              </Link>
-              <Link href="/skills" scroll={false}>
-                Skills
-              </Link>
-              <Link href="/projects" scroll={false}>
-                Projects
-              </Link>
-              <Link href="/contact" scroll={false}>
-                Contact
-              </Link>
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/projects">Projects</Link>
+              <Link href="/contact">Contact</Link>
             </div>
             <div className="mt-10 flex items-center justify-center">
               <div className="flex items-center text-[#DECBA4] justify-center gap-8 my-4 w-full sm:w-[80%]">
@@ -151,11 +141,6 @@ const Navbar = () => {
                     <FaGithubAlt />
                   </div>
                 </a>
-                <Link href="/#contact">
-                  <div className="rounded-full bg-[#DECBA4] text-[#3E5151] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                </Link>
               </div>
             </div>
           </div>

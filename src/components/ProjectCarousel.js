@@ -1,14 +1,15 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Skills from "./Skills";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+import ProjectItemsDesktop from "./ProjectItemsDesktop";
+import ProjectItemDesktop from "./ProjectItemDesktop";
 
+import { Projects } from "@/data/db";
 
-export const SkillsCarousel = () => {
+export const ProjectCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
     dragFree: true,
   });
 
@@ -21,24 +22,21 @@ export const SkillsCarousel = () => {
   }, [emblaApi]);
 
   return (
-    <div className="row relative">
+    <div className=" relative w-[100%] max-w-[1100px] m-auto">
       <button
-        className="bg-gray-400 opacity-40 w-[15px] h-[60px]  md:h-[60px] lg:h-[80px] absolute z-10 border-none rounded-none"
+        className=" bg-transparent border-none rounded-none absolute z-10 top-[50%] translate-y-[-50%] left-[-40px]"
         onClick={scrollPrev}
       >
-        <IoIosArrowBack />
+        <FaArrowLeft color="#3d81bc" size={30} />
       </button>
-      <div
-        className="overflow-hidden mb-10 sm:mb-0 flex row cursor-pointer relative"
-        ref={emblaRef}
-      >
-        <Skills />
+      <div className="overflow-hidden " ref={emblaRef}>
+       <ProjectItemsDesktop />
       </div>
       <button
-        className="bg-gray-400 opacity-40 w-[15px] h-[60px] md:h-[60px] lg:h-[80px] border-none rounded-none absolute z-10 top-0 right-0 "
+        className=" bg-transparent border-none rounded-none absolute z-10 top-[50%] translate-y-[-50%] right-[-40px] "
         onClick={scrollNext}
       >
-        <IoIosArrowForward />
+        <FaArrowRight color="#3d81bc" size={30}/>
       </button>
     </div>
   );

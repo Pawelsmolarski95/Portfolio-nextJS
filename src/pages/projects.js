@@ -1,39 +1,26 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-
-import adsProjectImage from "../../public/images/adsProject.png";
-import foodProjectImage from "../../public/images/foodProject.png";
-import travelProjectImage from "../../public/images/travelProject.png";
+import ProjectItem from "@/components/ProjectItemMobile";
 import waveProjectImage from "../../public/images/waveProject.png";
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
-import ProjectItem from "../components/ProjectItem.js"
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import ProjectItemsDesktop from "@/components/ProjectItemsDesktop";
+import ProjectItemsMobile from "@/components/ProjectItemsMobile";
+import { ProjectCarousel } from "@/components/ProjectCarousel";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-[100%] h-full ">
-      <div
-        data-aos="fade-left"
-        className="max-w-[1240px]    m-auto bg-transparent p-12"
-      >
-        <p className="uppercase tracking-[0.5rem] my-4 text-[#3d81bc] text-xl font-bold ">
-          Projects
-        </p>
-        <div className="w-full h-full">
-         
-          <ProjectItem
-            title={"WaveProject"}
-            image={waveProjectImage}
-            urlLink={"/yourads"}
-            alt={"book concerts"}
-            techStack={
-              "React, Redux, Router, Thunk, Sass, Node, Express, MongoDB"
-            }
-          />
-        </div>
+    <div className="h-full">
+      <p className="uppercase tracking-[0.5rem] my-10 w-[55%] m-auto text-[#3d81bc] text-xl font-bold ">
+        Projects
+      </p>
+      <div className="md:hidden">
+        <ProjectItemsMobile />
       </div>
+      <div className="hidden md:block ">
+        <ProjectCarousel />
+      </div>
+      
     </div>
   );
 };
-
 export default Projects;
