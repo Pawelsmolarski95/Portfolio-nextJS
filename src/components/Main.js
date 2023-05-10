@@ -1,15 +1,11 @@
 import React, { useEffect } from "react";
-
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
-import Link from "next/link";
 import mainImage from "../../public/images/face1.jpeg";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import ReactTyped from "react-typed";
 
 const Main = () => {
+
   return (
     <div className="w-full h-full tracking-widest font-serif flex justify-center items-center">
       <div className="w-full h-full flex flex-col lg:flex-row gap-10 justify-center items-center ">

@@ -6,7 +6,6 @@ import { Popover } from "@headlessui/react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
 import logo from "../../public/images/logo_main.svg";
-import { motion } from "framer-motion"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SwitchToggle from "./SwitchToggle";
