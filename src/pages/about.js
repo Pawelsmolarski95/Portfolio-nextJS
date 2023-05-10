@@ -35,8 +35,9 @@ const About = () => {
           </p>
           <br />
         </div>
-        <div className="w-[280px] h-[400px] p-4 bg-[#3E5151] rounded-xl mb-10 flex items-center justify-center  hover:scale-105 ease-in duration-300">
-          <Image src={portret} className="rounded-xl h-full" />
+
+        <div className="w-[280px] h-[400px] object-cover p-4  rounded-xl mb-10 flex items-center justify-center  hover:scale-105 ease-in duration-300">
+          <Image src={portret} className="rounded-xl h-full shadow-lg" />
         </div>
       </div>
       <div className="mb-10 sm:px-10 lg:px-[120px] flex flex-col gap-8 justify-center">

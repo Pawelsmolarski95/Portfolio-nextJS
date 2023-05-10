@@ -22,10 +22,10 @@ export const SkillsCarousel = () => {
   return (
     <div className="row relative">
       <button
-        className="bg-gray-400 opacity-40 w-[15px] h-[60px]  md:h-[60px] lg:h-[80px] absolute z-10 border-none rounded-none"
+        className=" hover:scale-125 ease-in duration-75 bg-transparent w-[15px] h-[60px]  md:h-[60px] lg:h-[80px] absolute z-10  top-0 left-[-40px] border-none rounded-none"
         onClick={scrollPrev}
       >
-        <IoIosArrowBack />
+        <IoIosArrowBack size={36} color="#3d81bc" />
       </button>
       <div
         className="overflow-hidden mb-10 sm:mb-0 flex row cursor-pointer relative"
@@ -34,10 +34,10 @@ export const SkillsCarousel = () => {
         <Skills />
       </div>
       <button
-        className="bg-gray-400 opacity-40 w-[15px] h-[60px] md:h-[60px] lg:h-[80px] border-none rounded-none absolute z-10 top-0 right-0 "
+        className=" hover:scale-125 ease-in duration-75 bg-transparent w-[15px] h-[60px] md:h-[60px] lg:h-[80px] border-none rounded-none absolute z-10 top-0 right-0 "
         onClick={scrollNext}
       >
-        <IoIosArrowForward />
+        <IoIosArrowForward size={36} color="#3d81bc" />
       </button>
     </div>
   );

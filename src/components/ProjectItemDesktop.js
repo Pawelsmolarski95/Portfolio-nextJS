@@ -15,7 +15,7 @@ const ProjectItemDesktop = ({
 }) => {
   return (
     <div className=" h-[600px] shrink-0 relative m-auto  mb-8 rounded-xl cursor-pointer group ">
-      <Image src={src} className="w-full  h-full " alt={alt} loading="eager" />
+      <Image src={src} className="w-full  h-full " alt={alt}  />
       <div className="absolute group text-white  z-10 left-0 bottom-0  pl-10 w-full bg-gray-800 bg-opacity-90">
         <h3 className="text-[18px] uppercase my-2 tracking-wider font-thin">{data}</h3>
         <h2 className="text-[24px]  my-2">{name}</h2>

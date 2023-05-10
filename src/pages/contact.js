@@ -55,63 +55,63 @@ const Contact = () => {
           </h2>
           <div className="flex gap-8">
             {" "}
-            <div className="rounded-full  shadow-lg    text-gray-500  border-gray-500 border-2 p-5 cursor-pointer ease-in duration-500">
-              <FaLinkedin size={25} />
+            <div className="rounded-full  shadow-lg  hover:scale-125 hover:text-[#3d81bc] hover:border-[#3d81bc]   text-gray-500  border-gray-500 border-2 p-5 cursor-pointer ease-in duration-500">
+              <FaLinkedin size={25} className="hover:animate-bounce" />
             </div>
-            <div className="rounded-full  shadow-lg    text-gray-500  border-gray-500 border-2 p-5 cursor-pointer ease-in duration-500">
-              <FaGithub size={25} />
+            <div className="rounded-full  shadow-lg  hover:scale-125 hover:text-[#3d81bc] hover:border-[#3d81bc]   text-gray-500  border-gray-500 border-2 p-5 cursor-pointer ease-in duration-500">
+              <FaGithub size={25} className="hover:animate-bounce"/>
             </div>
           </div>
         </div>
 
         <div className="w-[90%] sm:w-[50%] flex flex-col gap-8">
           <form ref={form} onSubmit={sendEmail}>
-            <div className="">
+            <div className="relative">
               <label
                 htmlFor="name"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block absolute px-1 py-0 z-10 bg-gray-100 top-[-13px] left-10 text-sm font-medium leading-6 text-gray-900"
               >
                 Name
               </label>
-              <div className="mt-2">
+              <div className="mt-2 mb-8">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                   <input
                     type="text"
                     name="user_name"
                     id="username"
                     autoComplete="false"
-                    className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                    placeholder="janesmith"
+                    className="block relative flex-1 border-0 bg-transparent py-1.5 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                   
                   />
                 </div>
               </div>
             </div>
 
-            <div className="sm:col-span-4">
+            <div className="sm:col-span-4 relative">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block absolute px-1 py-0  bg-gray-100 top-[-13px] left-10 z-10 text-sm font-medium leading-6 text-gray-900"
               >
                 Email
               </label>
-              <div className="mt-2">
-                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+              <div className="mt-2 mb-8">
+                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#3d81bc] sm:max-w-md">
                   <input
                     type="email"
                     name="user_email"
                     id="email"
                     autoComplete="email"
-                    className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="janesmith@gmail.com"
+                    className="block relative flex-1 border-0 bg-transparent py-1.5 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                    
                   />
                 </div>
               </div>
             </div>
 
-            <div className="col-span-full">
+            <div className="col-span-full mb-6 relative">
               <label
                 htmlFor="about"
-                className="block text-sm font-medium leading-6 text-gray-900"
+                className="block absolute py-0 px-1 z-10 bg-gray-100 top-[-13px] left-10  text-sm font-medium leading-6 text-gray-900"
               >
                 Message
               </label>
@@ -120,7 +120,7 @@ const Contact = () => {
                   id="about"
                   name="message"
                   rows={3}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full relative rounded-md border-0 py-1.5 bg-inherit text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3d81bc] sm:text-sm sm:leading-6"
                   defaultValue={""}
                 />
               </div>
@@ -128,7 +128,7 @@ const Contact = () => {
             <button
               type="submit"
               value="Send"
-              className="rounded-md font-normal tracking-wider bg-indigo-600 w-[40%] px-3 py-2 text-sm  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md font-normal tracking-wider mt-6 bg-[#3d81bc] w-full lg:w-[30%] px-3 py-2 text-sm  text-white shadow-sm hover:scale-110  ease-in duration-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Send Message
             </button>

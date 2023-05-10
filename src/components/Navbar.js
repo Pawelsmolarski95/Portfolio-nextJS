@@ -6,8 +6,7 @@ import { Popover } from "@headlessui/react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
 import logo from "../../public/images/logo_main.svg";
-import nameNavbar from "../../public/images/name_navbar.svg";
-
+import { motion } from "framer-motion"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SwitchToggle from "./SwitchToggle";
@@ -94,26 +93,26 @@ const Navbar = () => {
       </div>
       <SwitchToggle isDarkmode={isDarkmode} toggleTheme={toggleTheme} />
       <div className="grow  flex items-center justify-end lg:hidden">
-        <Popover.Button className="inline-flex items-center justify-end gap-2 p-2 text-[#DECBA4] bg-[#3E5151] md:gap-8">
+        <Popover.Button className="inline-flex items-center justify-end gap-2 p-2 border-2 border-gray-600 text-gray-600 bg-transparent md:gap-8">
           <AiOutlineMenu size={25} aria-hidden="true" />
         </Popover.Button>
       </div>
       <Popover.Panel
         focus
-        className="absolute z-[100] inset-x-0 top-0 origin-top-right transform p-2 bg-[#3E5151] transition lg:hidden"
+        className="absolute z-[100] inset-x-0 top-0 origin-top-right transform p-2 bg-gray-100 transition lg:hidden"
       >
         <div className="rounded-lg shadow-lg   ring-opacity-5 divide-y-2 divide-gray-50">
           <div className="pt-5 pb-6 px-5">
             <div className="flex items-center justify-between">
               <Image src={logo} alt="Logo" width={90} height={90} />
               <div className="-mr-2">
-                <Popover.Button className="inline-flex items-center justify-center gap-2 bg-[#DECBA4] p-2 text-[#3E5151]">
+                <Popover.Button className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-gray-600 p-2 text-[#3E5151]">
                   <span className="sr-only">Close menu</span>
                   <AiOutlineClose size={20} />
                 </Popover.Button>
               </div>
             </div>
-            <div className="flex justify-center mt-8 items-center flex-col text-[#DECBA4] uppercase tracking-widest gap-4">
+            <div className="flex justify-center mt-8 items-center flex-col text-gray-600 uppercase tracking-widest gap-4">
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
               <Link href="/projects">Projects</Link>
@@ -127,7 +126,7 @@ const Navbar = () => {
                   rel={"noreferrer"}
                   passhref="true"
                 >
-                  <div className="rounded-full bg-[#DECBA4] text-[#3E5151] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full bg-gray-600 text-gray-100 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -137,7 +136,7 @@ const Navbar = () => {
                   rel={"noreferrer"}
                   passhref="true"
                 >
-                  <div className="rounded-full bg-[#DECBA4] text-[#3E5151] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full bg-gray-600 text-gray-100 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithubAlt />
                   </div>
                 </a>
