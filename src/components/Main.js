@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { AiOutlineMail } from "react-icons/ai";
+
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BsPersonLinesFill } from "react-icons/bs";
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+
 import Link from "next/link";
 import mainImage from "../../public/images/face1.jpeg";
 import Image from "next/image";

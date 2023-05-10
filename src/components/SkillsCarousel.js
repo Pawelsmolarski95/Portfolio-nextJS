@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Skills from "./Skills";
 

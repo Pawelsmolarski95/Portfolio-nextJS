@@ -1,12 +1,7 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
 import ProjectItemsDesktop from "./ProjectItemsDesktop";
-import ProjectItemDesktop from "./ProjectItemDesktop";
-
-import { Projects } from "@/data/db";
 
 export const ProjectCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -30,13 +25,13 @@ export const ProjectCarousel = () => {
         <FaArrowLeft color="#3d81bc" size={30} />
       </button>
       <div className="overflow-hidden " ref={emblaRef}>
-       <ProjectItemsDesktop />
+        <ProjectItemsDesktop />
       </div>
       <button
         className=" bg-transparent border-none rounded-none absolute z-10 top-[50%] translate-y-[-50%] right-[-40px] "
         onClick={scrollNext}
       >
-        <FaArrowRight color="#3d81bc" size={30}/>
+        <FaArrowRight color="#3d81bc" size={30} />
       </button>
     </div>
   );
