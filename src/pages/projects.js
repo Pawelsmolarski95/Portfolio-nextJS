@@ -3,7 +3,6 @@ import { ProjectCarousel } from "@/components/ProjectCarousel";
 
 const Projects = () => {
   return (
-    
     <div className="h-full mb-5">
       <p className="uppercase tracking-[0.5rem] my-10 w-[55%] m-auto text-[#3d81bc] text-xl font-bold ">
         Projects

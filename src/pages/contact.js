@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { useRef } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ReactTyped from "react-typed";

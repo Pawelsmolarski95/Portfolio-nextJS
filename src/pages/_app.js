@@ -10,32 +10,31 @@ export default function App({ Component, pageProps }) {
   return (
     <div className="flex w-full h-full sm:h-screen flex-col justify-between">
       <Navbar />
-      <AnimatePresence mode="wait">
-        <motion.div 
-        key={router.route}
-        initial="initailState"
-        animate="animateState"
-        exit="exitState"
-        transition={{
-          duration: 1
-        }}
-        variants={{
-          initialState: {
-            opacity: 0,
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-          },
-          animateState: {
-            opacity: 1,
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-          },
-          exitState: {
-            clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
-          },
-        }}
+      <AnimatePresence initial={false} mode="wait">
+        <motion.div
+          key={router.route}
+          initial="initailState"
+          animate="animateState"
+          exit="exitState"
+          transition={{
+            duration: 1,
+          }}
+          variants={{
+            initialState: {
+              opacity: 0,
+              clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            },
+            animateState: {
+              opacity: 1,
+              clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            },
+            exitState: {
+              clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+            },
+          }}
         >
           <Component {...pageProps} />
         </motion.div>
-        
       </AnimatePresence>
 
       <Footer />

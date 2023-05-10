@@ -3,6 +3,7 @@ import portret from "../../public/images/portret.jpeg";
 import Image from "next/image";
 import { SkillsCarousel } from "../components/SkillsCarousel";
 
+
 const About = () => {
   return (
     <div
